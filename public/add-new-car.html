@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Staatliches" rel="stylesheet">  
+  <link rel="stylesheet" href="./assets/css/all-products.css">
+
+  <title>e car lot Products</title>
+</head>
+
+<body>
+  <header>
+        
+    <ul>
+        <div class="links">
+          <li class="dashboard-items"><a href="index.html">Home</a></li>            
+          <li class="dashboard-items"><a href="add-new-products.html">Add New Product</a></li>
+          <li class="dashboard-items current"><a href="all-products.html">View All Products</a></li>
+          <li class="dashboard-items current"><a href="search.html">Search For A Product</a></li>
+        </div>
+        
+       
+    </ul>
+</header>
+  <!-- Featured Cars -->
+  <section id="featured-cars" class="py-2">
+    <div class="container">
+      <h1 style="font-size: 40px">Welcome to e-Car Lot <span class="highlight" id="user"></span></h1>
+      <p class="lead">Have a car to sell? No problem, we gt you covered.</p>
+      <div class="articles-container" id="all-products">
+            <div class="container" style="width: 900px;">
+                    <form id= "ad-form" method="post">
+                        <label for='brand'>car brand</label>
+                        <select name="brand" id='brand'class="form-control form-control-md" align:"center" style="width:900px; height: 35px;">
+                            <option value="">Please select</option>
+                            <option value= 'Toyota'>Toyota</option>
+                            <option value= 'Honda'>Honda</option>
+                            <option value= 'Hyundai'>Hyundai</option>
+                        </select><br>   
+                        <label for="model">Model</label>
+                        <input type="text" id="model" name="name" style="width: 900px; height: 35px;"align: "center" placeholder="enter brand model e.g avalon" required><br>
+    
+                        <label for="series">series</label>
+                        <input type="text" id="series" name="name" style="width: 900px ;height: 35px;"align: "center" placeholder="enter model series e.g sport" required><br>
+                    
+                        <label for="price">Asking Price (Naira) </label>      
+                        <input type="number" id="price" align: "center"  required style="width: 900px; height: 35px;"><br>
+    
+                        <label for="description">Description</label>
+                        <textarea name="product_description" id="description"  align: "center" placeholder="" style="width: 900px; height: 35px;"></textarea><br>
+                        
+                        <label for="img_url">Image URL</label>
+                        <input type="file" align: "center" id="img_url" style="width: 900px; height: 35px;">
+                                        
+                    
+                        <div id="submit-button"><br><hr>
+                            <input type="submit" id="addnew" class="btn" value="Add Product" ><br>
+                        </div>
+                        
+                    </form>
+    
+                </div>
+     <!-- populated by js -->
+      </div>
+     
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="main-footer" class="py-2">
+   <div class="container footer-container">
+      <div>
+        <h3>Email Newsletter</h3>
+        <p>Kindly subscribe to our newsletter to get more offers</p>
+        <form actioO="">
+          <input type="email" placeholder="Enter Email...">
+          <input type="submit" value="Subscribe" class="btn btn-primary">
+        </form>
+      </div>
+      <div>
+        <h3>Useful Links</h3>
+        <ul class="list">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+      </div>
+       <div>
+        <p>
+          Copyright &copy; 2019 e-car-lot Ltd. All rights reserved
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="./assets/js/lib/jquery.js"></script>
+  <script src="assets/js/add-new-car.js"></script>
+</body>
+
+</html>
